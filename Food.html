@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+    <!--links-->
+    <link rel="shortcut icon" href="./images/food-hero-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Food.css">
+    <!--Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!--container with navbar and carousel slide-->
+<div class="container-fluid position-relative mx-0">
+    <!--navbar-->
+    <div class="container z-3 position-absolute top-0 start-50 translate-middle-x">
+        <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark rounded-bottom-4">
+            <div class="container mx-5">
+            <!--navbar-brand-->
+            <a href="#home" class="navbar-brand">
+                <img src="./images/food-hero-logo.png" alt="food-hero-logo" style="width:55px;height:50px;">
+            </a>
+            <!--navbar-toggler button-->
+            <button class="btn navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--navitems-->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link text-transparent fs-6 fw-medium">Home</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-center">
+                        <a href="#specials" class="nav-link dropdown-toggle text-transparent fs-6 fw-medium" data-bs-toggle="dropdown">Specials</a>
+                        <ul class="dropdown-menu bg-warning py-1 my-4 border-3 border-info rounded-2">
+                            <u class="dropdown-header fs-6 fw-medium text-uppercase text-center text-transparent fst-italic">Popular Dish</u>
+                            <a href="#" class="dropdown-item text-white bg-transparent fs-6 fw-medium text-start">Non-Vegeterian</a>
+                            <a href="#" class="dropdown-item text-white bg-transparent fs-6 fw-medium text-start">Vegeterian</a> 
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropdown-center">
+                        <a href="#menus" class="nav-link text-transparent fs-6 fw-medium dropdown-toggle" data-bs-toggle="dropdown">Menu's</a>
+                        <ul class="dropdown-menu bg-warning py-1 my-4 border-3 border-info rounded-2">
+                            <a href="#" class="dropdown-item text-white bg-transparent fs-6 fw-medium text-start">Chinese cuisine</a>
+                            <a href="#" class="dropdown-item text-white bg-transparent fs-6 fw-medium text-start">Indian cuisine</a>
+                            <a href="#" class="dropdown-item text-white bg-transparent fs-6 fw-medium text-start">Italy cuisine</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-transparent fs-6 fw-medium">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reservation" class="nav-link text-transparent fs-6 fw-medium">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    </div>
+    <!--end navbar-->
+    <div class="container-fluid position-absolute top-0 start-0 z-2 mb-5 mx-0">
+        <div class="row">
+            <div class="col-12">
+        <!--carousel sliders-->
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false" style="height:500px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000" style="height:600px;">
+                    <img src="./images/main-bg-img.jpeg" alt="first-cuisine" class="d-block w-100" style="filter:blur(3.0px);">
+                    <div class="carousel-caption position-absolute top-50 start-50 translate-middle">
+                        <h1 class="text-warning text-uppercase fw-bold h2 lh-base">Explore the Awesome Foods With Us!</h1>
+                        <p class="text-transparent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere, perspiciatis fuga quaerat corrupti quos deleniti natus. Beatae, magni ea?</p>
+                        <button class="btn btn-warning border-4 border-white rounded-4">Explore our Foods</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000" style="height:600px;">
+                    <img src="./images/lightblue_pasta_img-1.jpg" alt="second-cuisine" class="d-block w-100" style="filter:blur(2.3px);">
+                    <div class="carousel-caption position-absolute top-50 start-50 translate-middle">
+                        <h1 class="text-uppercase fw-bold h3 lh-base" style="color:rgb(0, 37, 37);">It starts with the good quality food</h1>
+                        <p class="text-transparent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere, perspiciatis fuga quaerat corrupti quos deleniti natus. Beatae, magni ea?</p>
+                        <button class="btn btn-warning border-4 border-white rounded-4">Explore our Foods</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000" style="height:600px;">
+                    <img src="./images/paneer-bg-img-1.jpeg" alt="third-cuisine" class="d-block w-100" style="filter:blur(2.5px);">
+                    <div class="carousel-caption position-absolute top-50 start-50 translate-middle">
+                        <h1 class="text-uppercase fw-bold lh-base h3 text-white">Serve a food with lots of love</h1>
+                        <p class="text-transparent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati facere, perspiciatis fuga quaerat corrupti quos deleniti natus. Beatae, magni ea?</p>
+                        <button class="btn btn-warning border-4 border-white rounded-4">Explore our Foods</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel">
+                <span class="carousel-control-prev-icon">
+                    <span class="visually-hidden">previous</span>
+                </span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel">
+                <span class="carousel-control-next-icon">
+                    <span class="visually-hidden">next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+    <!--end container with navbar and carousel slide-->
+    <!--about-->
+    <div class="container-fluid mx-auto d-block border-2 position-absolute my-4 top-100 start-0">
+        <div class="container mb-5">
+                <div class="row row-cols-2">
+                    <div class="offset-lg-1 col-4">
+                        <h1 class="lh-sm text-danger text-bold">Come early and,<br>Eat Delicious, Fresh Foods.</h1>
+                        <p class="text-secondary h6 lh-base mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis molestiae, tenetur corrupti soluta dicta excepturi!</p>
+                        <input type="text" class="form-control btn btn-warning my-3 shadow-lg " list="menus-list" placeholder="Click here to see the menu's">
+                        <datalist id="menus-list">
+                             <option value="Indian Cuisine"></option>
+                             <option value="chinese Cuisine"></option>
+                             <option value="Italy Cuisine"></option>
+                        </datalist>
+                    </div>
+                    <div class="offset-lg-2 col-4 position-relative">
+                           <img src="./images/main-main-bg-img.jpeg" alt="side-img" style="height:400px; width:250px" class="img-thumbnail  rounded-end-5 rounded-start-5 shadow-lg">
+                           <img src="./images/soup_box.png" alt="starter" class="shadow-regular position-absolute top-50 start-0   translate-middle" style="width:120px;height:120px;">
+                           <img src="./images/seafood_plater_starter.png" alt="starter" class=" shadow-regular position-absolute top-0 end-0 " style="width:160px;height:160px;">
+                           <img src="./images/chicken_dinner.jpeg" alt="chickendinner" class=" shadow-regular position-absolute bottom-0 end-0 translate-middle" style="width:115px;height:115px;">
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--end about-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Bootstrap-5 js and popper CDN Link-->
+            <!--Bootstrap-5 popper CDN Link-->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            <!--Bootstrap-5 js CDN link-->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
