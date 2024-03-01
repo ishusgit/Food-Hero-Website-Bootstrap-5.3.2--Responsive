@@ -15,7 +15,7 @@
 <div class="container-fluid position-relative mx-0">
     <!--navbar-->
     <div class="container z-3 position-absolute top-0 start-50 translate-middle-x">
-        <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark rounded-bottom-4">
+        <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark rounded-bottom-4 fixed-top">
             <div class="container mx-5">
             <!--navbar-brand-->
             <a href="#home" class="navbar-brand">
@@ -35,8 +35,8 @@
                         <a href="#specials" class="nav-link dropdown-toggle text-transparent fs-6 fw-medium" data-bs-toggle="dropdown">Specials</a>
                         <ul class="dropdown-menu bg-warning py-1 my-4 border-3 border-info rounded-2">
                             <u class="dropdown-header fs-6 fw-medium text-uppercase text-center text-transparent fst-italic">Popular Dish</u>
-                            <a href="#" class="dropdown-item text-white bg-transparent fs-6 fw-medium text-start">Non-Vegeterian</a>
-                            <a href="#" class="dropdown-item text-white bg-transparent fs-6 fw-medium text-start">Vegeterian</a> 
+                            <a href="#Non-vegeterian" class="dropdown-item text-white bg-transparent fs-6 fw-medium text-start">Non-Vegeterian</a>
+                            <a href="#vegeterian" class="dropdown-item text-white bg-transparent fs-6 fw-medium text-start">Vegeterian</a> 
                         </ul>
                     </li>
                     <li class="nav-item dropdown dropdown-center">
@@ -121,7 +121,7 @@
                         </datalist>
                     </div>
                     <div class="offset-lg-2 col-4 position-relative">
-                           <img src="./images/main-main-bg-img.jpeg" alt="side-img" style="height:400px; width:250px" class="img-thumbnail  rounded-end-5 rounded-start-5 shadow-lg">
+                           <img src="./images/about-light-bg-img.jpeg" alt="side-img" style="height:400px; width:250px" class="img-thumbnail  rounded-end-5 rounded-start-5 shadow-lg">
                            <img src="./images/soup_box.png" alt="starter" class="shadow-regular position-absolute top-50 start-0   translate-middle" style="width:120px;height:120px;">
                            <img src="./images/seafood_plater_starter.png" alt="starter" class=" shadow-regular position-absolute top-0 end-0 " style="width:160px;height:160px;">
                            <img src="./images/chicken_dinner.jpeg" alt="chickendinner" class=" shadow-regular position-absolute bottom-0 end-0 translate-middle" style="width:115px;height:115px;">
@@ -130,6 +130,19 @@
         </div>
     </div>
     <!--end about-->
+    <!--specials-->
+    <div class="container my-3 border border-3 info position-absolute">
+        <!--nav-tabs-->
+        <nav class="nav-pills flex-md-row">
+           <a href="#non-vegeterian" class="nav-link flex-sm-fill">Non-vegeterian</a>
+           <a href="#vegeterian" class="nav-link flex-sm-fill">Vegeterian</a>
+        </nav>
+        <div class="navbar-text">Specials</div>
+        <button class="btn btn-success position-relative" type="button">Popular Dishes
+            <span class="badge badge-warning position-absolute top-0 start-100 translate-middle">+4</span>
+        </button>
+    </div>
+    <!--end specials-->
 
 
 
